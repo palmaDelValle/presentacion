@@ -3,11 +3,16 @@
 }
 
 .reveal h2 {
-    color: blue;
+    color: #1e73be;
     font-size: 5vw;
 }
 
 .reveal h3 {
-    color: blue;
+    color: #1e73be;
     font-size: 2vw;
+}
+
+.reveal h3 {
+    color: #1e73be;
+    font-size: 1.5vw;
 }
