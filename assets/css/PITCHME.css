@@ -1,4 +1,13 @@
+.reveal {
+    font-size: 5vw;
+}
+
 .reveal h2 {
     color: blue;
-    font-size: 20px;
+    font-size: 15vw;
+}
+
+.reveal h3 {
+    color: blue;
+    font-size: 10vw;
 }
