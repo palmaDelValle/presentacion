@@ -1,6 +1,9 @@
 ## Pruebas automatizadas OCU - Universitas XXI Investigación	 
 
-Tecnologías utilizadas:
+
+---
+
+### Tecnologías utilizadas:
 - Typescript
 - Protractor
 - Selenium-Webdriver
