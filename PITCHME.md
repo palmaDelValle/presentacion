@@ -1,4 +1,4 @@
-# Pruebas automatizadas OCU - Universitas XXI Investigación	 
+## Pruebas automatizadas OCU - Universitas XXI Investigación	 
 
 Tecnologías utilizadas:
 - Typescript
@@ -7,14 +7,14 @@ Tecnologías utilizadas:
 - Jasmine
 ---
 
-## Protractor
+### Protractor
 
 Protractor es un framework de pruebas end-to-end para Angular and AngularJS applications. Protractor ejecuta los tests contra tu aplicación en un navegador real, interactuando con él como un usuario lo haría.
-![Flux Explained](/images/protactor-angular.png)
+![Logo Protractor](/assets/images/protactor-angular.png)
 
 ---
 
-## Instalación
+### Instalación
 
 Para poder ejecutar las pruebas automatizadas sobre el portal investigador debemos realizar los siguientes pasos: 
 
@@ -42,7 +42,7 @@ npm install
 ```
 ---
 
-## Ejecución
+### Ejecución
 
 Para ejecutar las pruebas debemos realizar los siguientes pasos:
 
@@ -73,7 +73,7 @@ En ese momento empezará a ejecutarse las pruebas que tengamos habilitadas en el
 
 ---
 
-## Fichero de configuración
+### Fichero de configuración
 
 En las siguientes diapositivas explicaremos diversas partes que contiene el fichero de configuración:
 
@@ -150,19 +150,19 @@ onPrepare: function () {
   },
   ```
   ---
-## Añadiendo flexibilidad a protractor con parámetros
+### Añadiendo flexibilidad a protractor con parámetros
 
 
 
 ---
-## Selectores
+### Selectores
 
 A continuación detallaremos algunos de los selectores utilizados a la hora de la realización de las pruebas automatizadas en el portal del investigador.
 
 Listado basado en la contribución de Javier Arques: https://gist.github.com/javierarques/0c4c817d6c77b0877fda
 
 ---
-### Controles del navegador
+#### Controles del navegador
 
 * browser.get('yoururl'); // Nos permite cargar una url pasada por parámetro
 * browser.navigate().back(); // Página anterior
@@ -174,7 +174,7 @@ Listado basado en la contribución de Javier Arques: https://gist.github.com/jav
 
 ---
 
-### Controladores de visibilidad
+#### Controladores de visibilidad
 
 * element(by.id('create')).isPresent() // Indica si un elemento está presente en el DOM
 * element(by.id('create')).isEnabled() // Indica si un elemento está habilitado o no 
@@ -182,7 +182,7 @@ Listado basado en la contribución de Javier Arques: https://gist.github.com/jav
 
 ---
 
-### Encontrando elementos (1)
+#### Encontrando elementos (1)
 
 * element(by.id('user_name')) --> $('#user_name').sendKeys('texto')
 * element(by.css('#myItem')) --> $('.user_name')
@@ -194,7 +194,7 @@ Listado basado en la contribución de Javier Arques: https://gist.github.com/jav
 
 ---
 
-### Encontrando elementos (2)
+#### Encontrando elementos (2)
 
 * element.all(by.css('.items)); --> $$('.items');
 * element.all(by.xpath('//div')
@@ -205,7 +205,7 @@ Listado basado en la contribución de Javier Arques: https://gist.github.com/jav
 * expect(list.last().getText()).toBe('Last’)
 
 ---
-### Matcher de Jasmine
+#### Matcher de Jasmine
 
 * to(N­ot)­Be( null | true | false )
 * to(N­ot)­Equ­al( value )
@@ -214,7 +214,7 @@ Listado basado en la contribución de Javier Arques: https://gist.github.com/jav
 * toBe­Gre­ate­rTh­an( number )
 
 ---
-### Expected Conditions
+#### Expected Conditions
 
 Es una librería que nos permite añadir unas condiciones adicionales a protractor que son de gran ayuda:
 
@@ -239,7 +239,7 @@ El código anterior realizará la prueba de esperar durante 15s si aparece el el
 
 ---
 
-## Page Objects
+### Page Objects
 
 Para evitar la duplicidad de código y tener nuestro código lo mas localizado posible, utilizamos page objects. Ejemplo:
 
