@@ -1,4 +1,4 @@
-## Pruebas automatizadas OCU - Universitas XXI Investigación {#idTitulo}
+## Pruebas automatizadas OCU - Universitas XXI Investigación
 
 
 ---
